@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { Injector, NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,7 +10,7 @@ import { environment } from '../environments/environment';
 import { SharedModule } from './shared/shared.module';
 import { LoginComponent } from './login';
 import { AuthenticationService, BackendService, PagerService } from './_services';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ChartsModule } from "ng2-charts";
 import { AboutComponent } from './about';
@@ -22,6 +22,13 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { CarouselComponent } from './carousel/carousel.component';
 
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { LanguageSelectComponent } from './i18n/language-select/language-select.component';
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
+
 @NgModule({
   declarations: [
     LoginComponent,
@@ -32,7 +39,8 @@ import { CarouselComponent } from './carousel/carousel.component';
     LoadingComponent,
     AppComponent,
     HomepageComponent,
-    CarouselComponent
+    CarouselComponent,
+    LanguageSelectComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +51,14 @@ import { CarouselComponent } from './carousel/carousel.component';
     // ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     ChartsModule,
     CarouselModule,
-    AppRoutingModule
+    AppRoutingModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [
     AuthGuard,
@@ -52,4 +67,5 @@ import { CarouselComponent } from './carousel/carousel.component';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

@@ -3,6 +3,7 @@ import { Breakpoints, BreakpointObserver, BreakpointState } from '@angular/cdk/l
 import { Router, Event, NavigationStart, NavigationEnd, NavigationCancel, NavigationError } from '@angular/router';
 import { AuthenticationService } from './_services';
 import { Observable } from 'rxjs';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -22,7 +23,8 @@ export class AppComponent implements OnInit, OnChanges, OnDestroy {
     // private loadingBar: SlimLoadingBarService,
     public router: Router,
     public authService: AuthenticationService,
-    private breakpointObserver: BreakpointObserver
+    private breakpointObserver: BreakpointObserver,
+    private translateService: TranslateService
   ) {
     console.log(" constructor")
 
@@ -49,8 +51,7 @@ export class AppComponent implements OnInit, OnChanges, OnDestroy {
 
     this.router.events.subscribe((event: Event) => {
       this.navigationInterceptor(event);
-    })
-      ;
+    });
   }
 
   ngOnChanges() {
@@ -69,8 +70,6 @@ export class AppComponent implements OnInit, OnChanges, OnDestroy {
     this.authService.logout()
     this.router.navigate(['login']);
   }
-
-
 
   isAuth(isAuth?: any) {
     if (isAuth) {
