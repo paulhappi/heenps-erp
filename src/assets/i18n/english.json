@@ -1,6 +1,7 @@
 {
   "text":{
-    "About_Us": "About Us",
-    "Contact_Us": "Contact Us"
+    "navbar.aboutus": "About Us",
+    "navbar.contactus": "Contact Us",
+    "navbar.home": "Home"
   }
 }

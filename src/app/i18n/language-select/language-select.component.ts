@@ -13,7 +13,7 @@ export class LanguageSelectComponent implements OnInit {
 
   constructor(public translate: TranslateService) {
     translate.setDefaultLang('english');
-    translate.addLangs(['english', 'francais']);
+    translate.addLangs(['english', 'français']);
     translate.use('english');
   }
 
