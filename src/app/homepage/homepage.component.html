@@ -21,20 +21,26 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav mx-auto">
               <a href="index.html" class="nav-item nav-link active">{{'text.navbar.home' | translate}}</a>
-              <a href="about.html" class="nav-item nav-link">{{'text.navbar.aboutus' | translate}}</a>
-              <a href="classes.html" class="nav-item nav-link">Classes</a>
               <div class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                  <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
-                      <a href="facility.html" class="dropdown-item">School Facilities</a>
-                      <a href="team.html" class="dropdown-item">Popular Teachers</a>
-                      <a href="call-to-action.html" class="dropdown-item">Become A Teachers</a>
-                      <a href="appointment.html" class="dropdown-item">Make Appointment</a>
-                      <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                      <a href="404.html" class="dropdown-item">404 Error</a>
-                  </div>
+                <a href="about.html" class="nav-item nav-link">{{'text.navbar.aboutus' | translate}}</a>
+                <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
+                    <a href="/vision" class="dropdown-item">{{'text.navbar.aboutus.vision' | translate}}</a>
+                    <a href="/values" class="dropdown-item">{{'text.navbar.aboutus.values' | translate}}</a>
+                    <a href="/educationalproject" class="dropdown-item">{{'text.navbar.aboutus.educationalproject' | translate}}</a>
+                    <a href="/equipement" class="dropdown-item">{{'text.navbar.aboutus.equipement' | translate}}</a>
+                    <a href="/staff" class="dropdown-item">{{'text.navbar.aboutus.staff' | translate}}</a>
+                </div>
+            </div>
+              <a href="/schoollife" class="nav-item nav-link">{{'text.navbar.school.life' | translate}}</a>
+              <a href="/entrepreneurship" class="nav-item nav-link">{{'text.navbar.entrepreneurship' | translate}}</a>
+              <div class="nav-item dropdown">
+                <a href="/contactus" class="nav-item nav-link">{{'text.navbar.contactus' | translate}}</a>
+                <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
+                  <a href="/admission" class="dropdown-item">{{'text.navbar.contactus.admission' | translate}}</a>
+                  <a href="/stages" class="dropdown-item">{{'text.navbar.contactus.stages' | translate}}</a>
+                  <a href="/inscription" class="dropdown-item">{{'text.navbar.contactus.inscription' | translate}}</a>
+                </div>
               </div>
-              <a href="contact.html" class="nav-item nav-link">{{'text.navbar.contactus' | translate}}</a>
           </div>
           <app-language-select></app-language-select>
           <a href="login" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Login<i class="fa fa-arrow-right ms-3"></i></a>

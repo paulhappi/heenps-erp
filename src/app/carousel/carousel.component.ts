@@ -33,11 +33,11 @@ export class CarouselComponent {
 
     slides = [
       {id: 1, img: "assets/img/carousel-1.jpg", text: "The Best Nursery and Primary School For Your Child"},
-      {id: 2, img: "assets/img/carousel-2.jpg", text: ""},
+      {id: 2, img: "assets/img/carousel-2.jpg", text: "We nurture wholesome leaders of tomorrow..."},
       {id: 3, img: "assets/img/carousel-3.jpg", text: ""},
       {id: 4, img: "assets/img/carousel-4.jpg", text: ""},
       {id: 5, img: "assets/img/carousel-5.jpg", text: ""},
-      {id: 6, img: "assets/img/carousel-6.jpg", text: ""},
+      {id: 6, img: "assets/img/carousel-6.jpg", text: "Make A Brighter Future For Your Child"},
       {id: 7, img: "assets/img/carousel-7.jpg", text: ""},
       {id: 8, img: "assets/img/carousel-8.jpg", text: ""}
     ];

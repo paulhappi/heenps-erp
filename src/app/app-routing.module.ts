@@ -7,6 +7,7 @@ import { NotFoundPageComponent } from './notfoundpage';
 import { LoginComponent } from './login';
 import { LoadingComponent } from './loading';
 import { HomepageComponent } from './homepage/homepage.component';
+import { VisionComponent } from './vision/vision.component';
 
 
 // const routes: Routes = [];
@@ -15,6 +16,50 @@ const routes: Routes = [
   {
     path: "homepage",
     component: HomepageComponent,
+  },
+  {
+    path: "vision",
+    component: VisionComponent,
+  },
+  {
+    path: "values",
+    component: VisionComponent,
+  },
+  {
+    path: "educationalproject",
+    component: VisionComponent,
+  },
+  {
+    path: "equipement",
+    component: VisionComponent,
+  },
+  {
+    path: "staff",
+    component: VisionComponent,
+  },
+  {
+    path: "schoollife",
+    component: VisionComponent,
+  },
+  {
+    path: "entrepreneurship",
+    component: VisionComponent,
+  },
+  {
+    path: "contactus",
+    component: VisionComponent,
+  },
+  {
+    path: "admission",
+    component: VisionComponent,
+  },
+  {
+    path: "stages",
+    component: VisionComponent,
+  },
+  {
+    path: "inscription",
+    component: VisionComponent,
   },
   {
     path: "login",

@@ -1,7 +1,17 @@
 {
   "text":{
-    "navbar.aboutus": "À propos de nous",
-    "navbar.contactus": "Contactez-nous",
-    "navbar.home": "Accueil"
+    "navbar.aboutus": "L'ECOLE",
+    "navbar.aboutus.vision": "Notre Vision",
+    "navbar.aboutus.values": "Nos Valeurs",
+    "navbar.aboutus.educationalproject": "Projet pédagogique",
+    "navbar.aboutus.equipement": "Les équipements",
+    "navbar.aboutus.staff": "Le personnel",
+    "navbar.contactus": "NOUS REJOINDRE",
+    "navbar.contactus.admission": "Conditions d'admission",
+    "navbar.contactus.stages": "Emplois et stages",
+    "navbar.contactus.inscription": "Contact / Inscription",
+    "navbar.home": "ACCUEIL",
+    "navbar.school.life": "VIE À L'ÉCOLE",
+    "navbar.entrepreneurship": "ENTREPREUNARIAT"
   }
 }

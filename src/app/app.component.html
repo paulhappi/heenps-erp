@@ -8,6 +8,50 @@
   <login-form></login-form>
 </div>
 
+<div *ngIf="!authService.isAuthenticated() && this.router.url === '/vision'">
+  <app-vision></app-vision>
+</div>
+
+<div *ngIf="!authService.isAuthenticated() && this.router.url === '/values'">
+  <app-vision></app-vision>
+</div>
+
+<div *ngIf="!authService.isAuthenticated() && this.router.url === '/educationalproject'">
+  <app-vision></app-vision>
+</div>
+
+<div *ngIf="!authService.isAuthenticated() && this.router.url === '/equipement'">
+  <app-vision></app-vision>
+</div>
+
+<div *ngIf="!authService.isAuthenticated() && this.router.url === '/staff'">
+  <app-vision></app-vision>
+</div>
+
+<div *ngIf="!authService.isAuthenticated() && this.router.url === '/schoollife'">
+  <app-vision></app-vision>
+</div>
+
+<div *ngIf="!authService.isAuthenticated() && this.router.url === '/entrepreneurship'">
+  <app-vision></app-vision>
+</div>
+
+<div *ngIf="!authService.isAuthenticated() && this.router.url === '/contactus'">
+  <app-vision></app-vision>
+</div>
+
+<div *ngIf="!authService.isAuthenticated() && this.router.url === '/admission'">
+  <app-vision></app-vision>
+</div>
+
+<div *ngIf="!authService.isAuthenticated() && this.router.url === '/stages'">
+  <app-vision></app-vision>
+</div>
+
+<div *ngIf="!authService.isAuthenticated() && this.router.url === '/inscription'">
+  <app-vision></app-vision>
+</div>
+
 <!-- <mat-progress-bar mode="indeterminate" class=""></mat-progress-bar> -->
 <div *ngIf="authService.isAuthenticated()" [ngClass]="uiContent"  role="main">
   <!-- calss="content" -->

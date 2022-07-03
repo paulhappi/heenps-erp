@@ -1,7 +1,17 @@
 {
   "text":{
-    "navbar.aboutus": "About Us",
-    "navbar.contactus": "Contact Us",
-    "navbar.home": "Home"
+    "navbar.aboutus": "SCHOOL",
+    "navbar.aboutus.vision": "Our Vision",
+    "navbar.aboutus.values": "Our Values",
+    "navbar.aboutus.educationalproject": "Educational project",
+    "navbar.aboutus.equipement": "Equipment",
+    "navbar.aboutus.staff": "Staff",
+    "navbar.contactus": "JOIN US",
+    "navbar.contactus.admission": "Conditions of admission",
+    "navbar.contactus.stages": "Jobs and internships",
+    "navbar.contactus.inscription": "Contact / Registration",
+    "navbar.home": "HOME",
+    "navbar.school.life": "SCHOOL LIFE",
+    "navbar.entrepreneurship": "ENTREPRENEURSHIP"
   }
 }
