@@ -27,6 +27,8 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { LanguageSelectComponent } from './i18n/language-select/language-select.component';
 import { VisionComponent } from './vision/vision.component';
 import { ErrorpageComponent } from './errorpage/errorpage.component';
+import { NavbarpageComponent } from './navbarpage/navbarpage.component';
+import { FooterpageComponent } from './footerpage/footerpage.component';
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -44,7 +46,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     CarouselComponent,
     LanguageSelectComponent,
     VisionComponent,
-    ErrorpageComponent
+    ErrorpageComponent,
+    NavbarpageComponent,
+    FooterpageComponent
   ],
   imports: [
     BrowserModule,
