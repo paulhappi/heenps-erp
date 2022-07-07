@@ -90,6 +90,7 @@ For detailed explanation on how things work, checkout following links please.
 
 
 #### Alternatives
-
+TODO
 
 ###  Change log
+TODO
