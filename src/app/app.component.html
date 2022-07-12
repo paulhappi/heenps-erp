@@ -28,6 +28,10 @@
   <app-vision></app-vision>
 </div>
 
+<div *ngIf="!authService.isAuthenticated() && this.router.url === '/school'">
+  <app-vision></app-vision>
+</div>
+
 <div *ngIf="!authService.isAuthenticated() && this.router.url === '/schoollife'">
   <app-vision></app-vision>
 </div>

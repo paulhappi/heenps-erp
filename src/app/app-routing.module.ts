@@ -38,6 +38,10 @@ const routes: Routes = [
     component: VisionComponent,
   },
   {
+    path: "school",
+    component: VisionComponent,
+  },
+  {
     path: "schoollife",
     component: VisionComponent,
   },
