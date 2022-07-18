@@ -14,6 +14,9 @@
     "navbar.school.life": "SCHOOL LIFE",
     "navbar.entrepreneurship": "ENTREPRENEURSHIP",
     "home.aboutus": "About us",
-    "home.aboutus.text": "Happi Elite Nursery & Primary School is dedicated to providing a prepared, supportive, progressive and happy place to learn. We foster respect and accountability in days filled with discovery, academic growth and fun."
+    "home.aboutus.text": "Happi Elite Nursery & Primary School is dedicated to providing a prepared, supportive, progressive and happy place to learn. We foster respect and accountability in days filled with discovery, academic growth and fun.",
+    "page.error.title": "Page Not Found",
+    "page.error.body": "We’re sorry, the page you have looked for does not exist in our website! Maybe go to our home page or try to use a search?",
+    "page.error.home": "Go Back To Home"
   }
 }

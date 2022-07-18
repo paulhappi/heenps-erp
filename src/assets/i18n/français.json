@@ -14,6 +14,9 @@
     "navbar.school.life": "VIE À L'ÉCOLE",
     "navbar.entrepreneurship": "ENTREPREUNARIAT",
     "home.aboutus": "À propos de nous",
-    "home.aboutus.text": "Happi Elite Nursery & Primary School se consacre à fournir un lieu d'apprentissage préparé, favorable, progressif et heureux. Nous encourageons le respect et la responsabilité lors de journées remplies de découvertes, de croissance académique et de plaisir."
+    "home.aboutus.text": "Happi Elite Nursery & Primary School se consacre à fournir un lieu d'apprentissage préparé, favorable, progressif et heureux. Nous encourageons le respect et la responsabilité lors de journées remplies de découvertes, de croissance académique et de plaisir.",
+    "page.error.title": "Page non trouvée",
+    "page.error.body": "Nous sommes désolés, la page que vous avez recherchée n'existe pas sur notre site Web ! Allez peut-être sur notre page d'accueil ou essayez d'utiliser une recherche ?",
+    "page.error.home": "Retour à l'accueil"
   }
 }
