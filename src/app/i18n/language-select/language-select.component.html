@@ -1,6 +1,8 @@
 <!--<p>language-select works!</p>-->
 <form class="form-group">
-  <select class="fa fa-arrow-right ms-3" [(ngModel)]="selectLang" name="selectLang" (change)="setTransLanguage()">
-  <option *ngFor="let lang of TransLang" value="{{lang}}">{{ lang }}</option>
+  <select class="fa fa-arrow-right ms-3" [(ngModel)]="selectLang" #langSelect name="selectLang" (change)="changeLang(langSelect.value)">
+  <option *ngFor="let lang of TransLang" [value]="lang">
+    [selected]="lang === translate.currentLang">{{ lang }}
+  </option>
   </select>
 </form>
