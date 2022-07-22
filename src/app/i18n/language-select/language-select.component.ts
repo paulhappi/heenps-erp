@@ -12,12 +12,14 @@ export class LanguageSelectComponent implements OnInit {
   TransLang=[];
 
   constructor(public translate: TranslateService) {
-    translate.addLangs(['english', 'français']);
+    //translate.addLangs(['english', 'français']);
 
     if (localStorage.getItem('language')) {
       translate.use(localStorage["language"]);
+      this.fillLangs();
     } else {
       localStorage.setItem('language', 'english');
+      translate.addLangs(['english', 'français']);
       translate.use('english');
     }
   }
@@ -28,6 +30,14 @@ export class LanguageSelectComponent implements OnInit {
 
   getTransLanguage(){
   this.TransLang=[...this.translate.getLangs()];
+  }
+
+  fillLangs() {
+    if (localStorage.getItem('language') === 'english') {
+      this.translate.addLangs(['english', 'français']);
+    } else {
+      this.translate.addLangs(['français', 'english']);
+    }
   }
 
   ngOnInit(): void {
