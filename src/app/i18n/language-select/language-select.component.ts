@@ -12,7 +12,6 @@ export class LanguageSelectComponent implements OnInit {
   TransLang=[];
 
   constructor(public translate: TranslateService) {
-    //translate.addLangs(['english', 'français']);
 
     if (localStorage.getItem('language')) {
       translate.use(localStorage["language"]);
