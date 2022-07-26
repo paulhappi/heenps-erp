@@ -28,7 +28,7 @@ export class LanguageSelectComponent implements OnInit {
   }
 
   getTransLanguage(){
-  this.TransLang=[...this.translate.getLangs()];
+    this.TransLang=[...this.translate.getLangs()];
   }
 
   fillLangs() {
@@ -47,5 +47,4 @@ export class LanguageSelectComponent implements OnInit {
     localStorage.setItem('language', language);
     this.translate.use(language);
   }
-
 }
