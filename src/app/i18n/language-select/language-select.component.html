@@ -1,6 +1,6 @@
 <!--<p>language-select works!</p>-->
 <form class="form-group">
   <select class="fa fa-arrow-right ms-3" #langSelect (change)="changeLang(langSelect.value)">
-  <option *ngFor="let lang of TransLang" value="{{lang}}">{{ lang }}</option>
+  <option *ngFor="let lang of TransLang" value="{{ lang }}">{{ lang }}</option>
   </select>
 </form>
