@@ -12,8 +12,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * ~~To simulate real-world business, this starter project chooses Json-Server as fake Restful API. (You can simple replace it with your own API).~~
 * ~~Fake API is just readonly fake service.~~
 
-
-
 #### Live Demo
 [Demo App](http://www.heenps.org): The demo is just a proof of concept. It doesn't have back-end API and all features of master branch.
 
@@ -46,7 +44,6 @@ ng serve
 npm run test
 # Or use ng
 ng test
-
 
 # build for production 
 npm run build --prod=true
