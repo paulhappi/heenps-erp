@@ -13,6 +13,9 @@
       <mat-card-header>
         <div mat-card-avatar class="example-header-image"></div>
         <h2>Nufi School ERP</h2>
+        <div>
+          <app-language-select></app-language-select>
+        </div>
       </mat-card-header>
       <mat-card-content class="field-item">
         <mat-form-field style="display: block" [ngClass]="{  'mat-input-error': f.submitted && !username.valid }">
@@ -30,6 +33,9 @@
 
       <mat-card-actions class="action-item">
         <button mat-raised-button [disabled]="isValidating">Login</button>
+      </mat-card-actions>
+      <mat-card-actions class="action-item">
+        <a href="/homepage" class="nav-item nav-link active">{{'text.navbar.home' | translate}}</a>
       </mat-card-actions>
     </form>
   </mat-card>
