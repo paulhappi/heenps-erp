@@ -20,7 +20,11 @@
     "page.error.home": "Retour à l'accueil",
     "login.button": "Connecter",
     "login.username": "Nom Utilisateur",
-    "login.password": "Mot de passe"
+    "login.password": "Mot de passe",
+    "application.dashboard": "Tableau de bord",
+    "application.order": "Ordre",
+    "application.logout": "Déconnecter",
+    "application.change.password": "Changer mot de passe"
 
   }
 }

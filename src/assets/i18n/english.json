@@ -20,6 +20,10 @@
     "page.error.home": "Go Back To Home",
     "login.button": "Login",
     "login.username": "User Name",
-    "login.password": "Password"
+    "login.password": "Password",
+    "application.dashboard": "Dashboard",
+    "application.order": "Order",
+    "application.logout": "Logout",
+    "application.change.password": "Change Password"
   }
 }
