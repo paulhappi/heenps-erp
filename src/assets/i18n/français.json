@@ -24,7 +24,8 @@
     "application.dashboard": "Tableau de bord",
     "application.order": "Ordre",
     "application.logout": "Déconnecter",
-    "application.change.password": "Changer mot de passe"
+    "application.change.password": "Changer mot de passe",
+    "application.welcome": "Bienvenue  "
 
   }
 }

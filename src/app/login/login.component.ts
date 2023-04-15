@@ -29,15 +29,17 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
     // this.authenticationService.logout();
-    this.model.username = "Admin@test.com";
-    this.model.password = "password";
-    this.returnUrl =
-      this.route.snapshot.queryParams["returnUrl"] || "loading";
+    //this.model.username = "admin@heenps.org";//"Admin@test.com";
+    //this.model.password = "password";
+    //this.model.username = "admin";//"Admin@test.com";
+    //this.model.password = "1234";
+    //this.returnUrl =
+      //this.route.snapshot.queryParams["returnUrl"] || "loading";
       // this.isloading = false;
       // this.isAuthenticated =  false;
 
   }
-
+/*
   login() {
     this.isValidating = true;
     // this.isloading = true;
@@ -57,5 +59,18 @@ export class LoginComponent implements OnInit {
         this.router.navigate([this.returnUrl]);
       }
     );
+  }
+*/
+
+  onLogin(data){
+    this.authenticationService.login(data)
+      .subscribe(resp => {
+        let jwt = resp.body['access-token'];
+        this.authenticationService.saveToken(jwt);
+        this.router.navigateByUrl("/dashboard");
+      },err=>{
+
+      })
+    //console.log(data);
   }
 }

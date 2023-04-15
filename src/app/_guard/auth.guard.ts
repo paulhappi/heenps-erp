@@ -14,7 +14,7 @@ export class AuthGuard implements CanActivate {
         state: RouterStateSnapshot) : any {
         const user = this.authService.getUser()
         if (user && user.isAuthenticated) {
-            // logged in so return true 
+            // logged in so return true
           return  new Promise(function (resolve, _reject) {
                 setTimeout(resolve, 350, true)
           })

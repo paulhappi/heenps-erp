@@ -24,6 +24,7 @@
     "application.dashboard": "Dashboard",
     "application.order": "Order",
     "application.logout": "Logout",
-    "application.change.password": "Change Password"
+    "application.change.password": "Change Password",
+    "application.welcome": "Welcome "
   }
 }

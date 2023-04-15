@@ -61,14 +61,17 @@ export class AppComponent implements OnInit, OnChanges, OnDestroy {
 
   ngOnInit(): void {
     console.log(" ngOnInit")
+    this.authService.loadToken();
     this.user = this.authService.getUser();
     this.isloading = false;
   }
 
   logout(): void {
     // localStorage.removeItem('currentUser');
-    this.authService.logout()
-    this.router.navigate(['login']);
+    this.authService.logout();
+    //this.router.navigate(['login']);
+    //this.router.navigateByUrl('/login');
+    //window.location.reload();
   }
 
   isAuth(isAuth?: any) {
@@ -76,6 +79,38 @@ export class AppComponent implements OnInit, OnChanges, OnDestroy {
       this.user = this.authService.getUser()
       // this.user = JSON.parse(localStorage.getItem(APP_USER_PROFILE)) || <User>{};
     }
+  }
+
+  isAdmin() {
+    return this.authService.isAdmin();
+  }
+
+  isSuperAdmin() {
+    return this.authService.isSuperAdmin();
+  }
+
+  isHeadTeacher() {
+    return this.authService.isHeadTeacher();
+  }
+
+  isTeacher() {
+    return this.authService.isTeacher();
+  }
+
+  isPurpil() {
+    return this.authService.isPurpil();
+  }
+
+  isBursar() {
+    return this.authService.isBursar();
+  }
+
+  isGuardian() {
+    return this.authService.isGuardian();
+  }
+
+  isAuthenticated() {
+    return this.authService.isAuthenticated();
   }
 
   private navigationInterceptor(event: Event): void {
